@@ -55,11 +55,11 @@ async function train(model, data) {
 
 function displayImages(imgArr) {
 	const url = URL.createObjectURL(imgArr);
-	document.getElementById("canvasimg").src = url;
+	rawImage.src = url;
 }
     
 function erase() {
-	document.getElementById("canvasimg").src = "#";
+	rawImage.src = "#";
 }
     
 function save() {
