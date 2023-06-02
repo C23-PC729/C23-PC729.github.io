@@ -22,7 +22,7 @@
             document.getElementById("status").innerHTML = "Start Predicting...";
             prediction = await model.predict(tf.browser.fromPixels(rawImage).cast('int32').expandDims());
             document.getElementById("status").innerHTML = "Prediction result:";
-            document.getElementById("output").innerHTML = "PM10: " + prediction.dataSync()[0];
+            document.getElementById("output").innerHTML = "PM2.5: " + prediction.dataSync()[0];
         }
 
         async function run() {
